@@ -1,5 +1,3 @@
-// Calcola quanto pesano tutte le zucchine.
-
 //Zucchine
 // Crea 10 oggetti che rappresentano una zucchina,
 // indicando per ognuna varietà, peso e lunghezza.
@@ -45,5 +43,21 @@ var zucchinaBolzano = {
 };
 
 //calcolato il peso sommando ogni zucchina
-var pesoZucchine =zucchinaChiaraFaenza.peso + zucchinaFirenze.peso + zucchinaRieti.peso + zucchinaRoma.peso + zucchinaTerni.peso + zucchinaPerugia.peso + zucchinaParma.peso + zucchinaViterbo.peso + zucchinaTorino.peso + zucchinaBolzano.peso;
-console.log("Peso delle zucchine: " + pesoZucchine);
+// var pesoZucchine =zucchinaChiaraFaenza.peso + zucchinaFirenze.peso + zucchinaRieti.peso + zucchinaRoma.peso + zucchinaTerni.peso + zucchinaPerugia.peso + zucchinaParma.peso + zucchinaViterbo.peso + zucchinaTorino.peso + zucchinaBolzano.peso;
+// console.log("Peso delle zucchine: " + pesoZucchine);
+
+//creata un array dove andranno inserite le zucchine
+var listaZucchine = [];
+
+//inserisco nell'array le zucchine tramite push
+listaZucchine.push(zucchinaChiaraFaenza, zucchinaFirenze, zucchinaRieti, zucchinaRoma, zucchinaTerni, zucchinaPerugia, zucchinaParma, zucchinaViterbo, zucchinaTorino, zucchinaBolzano);
+//console.log(listaZucchine);
+
+//var del peso totale che deve partire da zero
+var pesoTotale = 0;
+
+//ciclo for per sommare i pesi delle diverse zucchine
+for(var i = 0; i < listaZucchine.length; i++){  
+    pesoTotale = pesoTotale + listaZucchine[i].peso;
+}
+console.log("Peso delle zucchine: " + pesoTotale + "kg");
