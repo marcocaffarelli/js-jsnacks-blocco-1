@@ -1,3 +1,45 @@
+// Calcola quanto pesano tutte le zucchine.
+
+//Zucchine
 // Crea 10 oggetti che rappresentano una zucchina,
 // indicando per ognuna varietà, peso e lunghezza.
-// Calcola quanto pesano tutte le zucchine.
+var zucchinaChiaraFaenza = {
+    peso : 10,
+    lunghezza : 0.9
+};
+var zucchinaFirenze = {
+    peso : 12,
+    lunghezza : 0.3
+};
+var zucchinaRieti = {
+    peso : 7,
+    lunghezza : 0.4
+};
+var zucchinaRoma = {
+    peso : 18,
+    lunghezza : 0.5
+};
+var zucchinaTerni = {
+    peso : 3,
+    lunghezza : 0.4
+};
+var zucchinaPerugia = {
+    peso : 6,
+    lunghezza : 0.2
+};
+var zucchinaParma = {
+    peso : 7,
+    lunghezza : 0.7
+};
+var zucchinaViterbo= {
+    peso : 8,
+    lunghezza : 0.1
+};
+var zucchinaTorino = {
+    peso : 16,
+    lunghezza : 0.8
+};
+var zucchinaBolzano = {
+    peso : 11,
+    lunghezza : 1
+};
