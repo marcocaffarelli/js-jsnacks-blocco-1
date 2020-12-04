@@ -43,3 +43,7 @@ var zucchinaBolzano = {
     peso : 11,
     lunghezza : 1
 };
+
+//calcolato il peso sommando ogni zucchina
+var pesoZucchine =zucchinaChiaraFaenza.peso + zucchinaFirenze.peso + zucchinaRieti.peso + zucchinaRoma.peso + zucchinaTerni.peso + zucchinaPerugia.peso + zucchinaParma.peso + zucchinaViterbo.peso + zucchinaTorino.peso + zucchinaBolzano.peso;
+console.log("Peso delle zucchine: " + pesoZucchine);
