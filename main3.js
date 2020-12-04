@@ -1,5 +1,3 @@
-// Dividi in due array separati le zucchine che misurano
-// meno o più di 15cm.
 // Infine stampa separatamente quanto pesano i due gruppi
 // di zucchine
 
@@ -45,3 +43,12 @@ var zucchinaBolzano = {
     lunghezza : 1
 };
 
+// Dividi in due array separati le zucchine che misurano
+// meno o più di 15cm.
+
+var listaZucchineCorte = [];
+var listaZucchineLunghe = [];
+//aggiunte le zucchine corte alla listaZucchineCorte
+listaZucchineCorte.push(zucchinaFirenze, zucchinaRieti, zucchinaRoma, zucchinaViterbo, zucchinaTorino, zucchinaBolzano);
+//aggiunte le zucchine lunghe alla listaZucchineLunghe
+listaZucchineLunghe.push(zucchinaChiaraFaenza, zucchinaTerni, zucchinaPerugia, zucchinaParma);
