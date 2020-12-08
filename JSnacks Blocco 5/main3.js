@@ -57,7 +57,7 @@ var pesoCorte = 0;
 //var del peso zucchine lunghe che deve partire da zero
 var pesoLunghe = 0;
 
-
+///////////////////////////// CICLO FOR /////////////////////////////
 //ciclo for per sommare i pesi delle zucchine corte
 for(var i = 0; i < listaZucchineCorte.length; i++){  
     pesoCorte = pesoCorte + listaZucchineCorte[i].peso;
@@ -67,4 +67,19 @@ console.log("Peso delle zucchine sotto i 15cm: " + pesoCorte + "kg");
 for(var y = 0; y < listaZucchineLunghe.length; y++){  
     pesoLunghe = pesoLunghe + listaZucchineLunghe[y].peso;
 }
-console.log("Peso delle zucchine sopra i 15cm:: " + pesoLunghe + "kg");
+console.log("Peso delle zucchine sopra i 15cm: " + pesoLunghe + "kg");
+
+///////////////////////////// CICLO FOREACH /////////////////////////////
+
+//ciclo forEach per sommare i pesi delle zucchine corte
+listaZucchineCorte.forEach(function (item) {
+    item.pesoCorte = item.pesoCorte + listaZucchineCorte.peso;
+     
+});
+console.log("Peso delle zucchine sotto i 15cm: " + pesoCorte + "kg" + " ciclo forEach");
+//ciclo forEach per sommare i pesi delle zucchine lunghe
+listaZucchineLunghe.forEach(function (item) {
+    item.pesoLunghe = item.pesoLunghe + listaZucchineLunghe.peso;
+     
+});
+console.log("Peso delle zucchine sopra i 15cm: " + pesoLunghe + "kg" + " ciclo forEach");

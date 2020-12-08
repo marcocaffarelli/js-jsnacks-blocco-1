@@ -61,3 +61,11 @@ for(var i = 0; i < listaZucchine.length; i++){
     pesoTotale = pesoTotale + listaZucchine[i].peso;
 }
 console.log("Peso delle zucchine: " + pesoTotale + "kg");
+
+
+//ciclo forEach per sommare i pesi delle diverse zucchine
+listaZucchine.forEach(function (item) {
+    item.pesoTotale = item.pesoTotale + listaZucchine.peso;
+     
+});
+console.log("Peso delle zucchine: " + pesoTotale + "kg");

@@ -21,7 +21,7 @@ var bici = [
     }
     
 ]
-// ciclo if per trovare la bici con peso minore
+// if per trovare la bici con peso minore
 if (bici[0].peso<bici[1].peso && bici[0].peso<bici[2].peso && bici[0].peso<bici[3].peso) {
     console.log(bici[0])
 }else if(bici[1].peso<bici[0].peso && bici[1].peso<bici[2].peso && bici[1].peso<bici[3].peso){
